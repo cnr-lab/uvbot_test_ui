@@ -37,10 +37,10 @@ class UvbotDebugUI:
         if id == 2002:
             for i in range(6):
                 self.ultrasound[i] = data[i]
-            self.floor[0] = (data[7]&128) >> 7
-            self.floor[1] = (data[7]&64) >> 6
-            self.floor[2] = (data[7]&32) >> 5
-            self.floor[3] = (data[7]&16) >> 4
+            self.floor[3] = (data[7]&128) >> 7
+            self.floor[2] = (data[7]&64) >> 6
+            self.floor[1] = (data[7]&32) >> 5
+            self.floor[0] = (data[7]&16) >> 4
             
         elif id == 2003:
             self.imu[0] = (data[0]|data[1]<<8)/self.significant_figures
@@ -51,7 +51,10 @@ class UvbotDebugUI:
         elif id == 12105473:
             self.enc[0] = (data[5] | (data[6]<<8))
             self.enc[1] = (data[2] | (data[3]<<8))
-
+            for i in range(2):
+                if not self.enc[i]&0b1000000 == 0:
+                    self.enc[i] =self.enc[i] - 65534
+                
         elif id == 3001:
             self.pir[5] = (data[7]&128) >> 7
             self.pir[4] = (data[7]&64) >> 6
@@ -76,13 +79,13 @@ class UvbotDebugUI:
         if direction == "stop":
             packit = [PID_PNT_VEL_CMD,1,0,0,1,0,0,1]
         elif direction == "front":
-            packit = [PID_PNT_VEL_CMD,1,50,0,1,50,0,1]
+            packit = [PID_PNT_VEL_CMD,1,20,0,1,20,0,1]
         elif direction == "back":
-            packit = [PID_PNT_VEL_CMD,1,206,0,1,206,0,1]
+            packit = [PID_PNT_VEL_CMD,1,236,255,1,236,255,1]
         elif direction == "right":
-            packit = [PID_PNT_VEL_CMD,1,50,0,1,206,0,1]
+            packit = [PID_PNT_VEL_CMD,1,20,0,1,236,255,1]
         elif direction == "left":
-            packit = [PID_PNT_VEL_CMD,1,206,0,1,50,0,1]
+            packit = [PID_PNT_VEL_CMD,1,236,255,1,20,0,1]
         else:
             packit = [PID_PNT_VEL_CMD,1,0,0,1,0,0,1]
         self.can_interface.sendCan(12040193,packit)
@@ -93,10 +96,10 @@ class UvbotDebugUI:
             self.rgb = 6
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         elif rgb == "blue":
-            self.rgb = 10
+            self.rgb = 1 #10
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         elif rgb == "green":
-            self.rgb = 1
+            self.rgb = 2
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         else:
             self.rgb = 0

@@ -42,7 +42,7 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
         self.right.clicked.connect(self.RIGHT)
         self.suspend.clicked.connect(self.Suspend)
         self.Receive_data()
-        self.timer.start(100)
+        self.timer.start(1)
         
 
 
