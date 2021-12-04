@@ -31,9 +31,15 @@ class UvbotDebugUI:
         self.uv = 0
         self.air = 0
         self.rgb = 0
+        
+        self.count = 0
     
-    def parse(self):
-        id,data = self.can_interface.recvCan()    
+    def parse(self): 
+        if self.count >= 1000:
+            id,data = self.can_interface.recvCan()
+        else: 
+            self.count = self.count+1
+            return   
         if id == 2002:
             for i in range(6):
                 self.ultrasound[i] = data[i]
