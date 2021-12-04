@@ -54,7 +54,8 @@ class UvbotDebugUI:
             for i in range(2):
                 if not self.enc[i]&0b1000000 == 0:
                     self.enc[i] =self.enc[i] - 65534
-                
+            self.enc[0] = -1 * self.enc[0]    
+            
         elif id == 3001:
             self.pir[5] = (data[7]&128) >> 7
             self.pir[4] = (data[7]&64) >> 6
