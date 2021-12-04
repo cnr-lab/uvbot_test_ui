@@ -8,6 +8,7 @@
     & sudo apt-get install can-utils</br>
     & pip3 install cantools</br>
     & pip3 install pyside2</br>
+    & git clone https://github.com/cnr-lab/uvbot_test_ui.git</br>
 
 이미 설치된 경우 설치하지 않아도 됩니다.</br>
 터미널 여는 방법 ctrl+alt+t
