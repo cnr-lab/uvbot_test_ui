@@ -40,8 +40,12 @@ python3</br>
 ![img](./image/ui1.png)</br></br></br>
 센서 데이터 확인창</br> 
 ![img](./image/ui2.png)</br>
-로봇의 센서 데이터를 확인 할 수 있는 부분 </br></br></br>
-
+로봇의 센서 데이터를 확인 할 수 있는 부분 </br>
+- 초음파 (cm)</br>
+- 바닥감지,인체감지,터치센서 (Boolen On:1 Off:0)</br>
+- 배터리 (%)</br>
+- IMU (Roll Pitch Yaw : Dgree AngularZ : rad/s)</br>
+- 엔코더 (RPM) </br></br></br>
 명령 전송 버튼 창</br>
 ![img](./image/ui3.png)</br>
 버튼을 이용해 로봇에 명령을 줄수 있는 부분 </br></br></br>
