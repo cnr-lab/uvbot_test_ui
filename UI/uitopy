@@ -1,0 +1,4 @@
+pyuic5 -x splash.ui -o splash.py : PyQt5 로 변환
+pyside2-uic splash.ui -o splash.py :Pyside2 로 변환
+
+ex : pyside2-uic main.ui -o qtui.py
