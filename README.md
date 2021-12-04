@@ -23,7 +23,7 @@
 
 주의사항
 - cd Adam_test_ui/shell이 안될경우 cd 입력후 다시 시도
-- sudo ./adam_ui.sh이 실행되지 않을 경우 chmod +x *을 입력
+- sudo ./adam_ui.sh이 실행되지 않을 경우 " chmod +x * "을 입력
 - can 모듈을 꼽지않고 실행 할 경우 실해되지 않습니다.
 - can 통신이 안될경우 UI가 정상 동작하지 않을 수 있습니다.
 - can 통신이 안될경우 UI가 정상 종료 되지 않을 수 있습니다.
