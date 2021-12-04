@@ -6,7 +6,7 @@
 2. 다음과 명령어를 순서대로 입력한다.
 
     & sudo apt-get install can-utils</br>
-    & pip3 install cantools</br></br>
+    & pip3 install cantools</br>
     & pip3 install pyside2</br>
 
 이미 설치된 경우 설치하지 않아도 됩니다.</br>
