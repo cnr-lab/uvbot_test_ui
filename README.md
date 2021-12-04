@@ -17,9 +17,9 @@
 1. 위 사진의 점퍼핀(흰색)과 같은 위치에 점퍼핀을 꼽는다.
 2. 위 사진의 can 통신 모듈을 컴퓨터에 꼽는다.
 3. can 모듈과 로봇을 연결한다.
-4. 터미널을 열어 다음과 같이 실행한다.
-    $ cd Adam_test_ui/shell
-    $ sudo ./adam_ui.sh
+4. 터미널을 열어 다음과 같이 실행한다.</br>
+    $ cd Adam_test_ui/shell</br>
+    $ sudo ./adam_ui.sh</br>
 
 주의사항
 - cd Adam_test_ui/shell이 안될경우 cd 입력후 다시 시도
