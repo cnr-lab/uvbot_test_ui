@@ -24,7 +24,7 @@ class UvbotDebugUI:
         self.touch = 0
         self.battery = 0
         self.charge = "알수없음"
-        self.imu = [0,0,0,0] # Roll Pitch Yaw angularZ
+        self.imu = [0,0,0,0] # Roll Pitch Yaw angularFpZ
         self.enc = [0,0] # Right Left
         self.current = [0,0]
         self.significant_figures = 100
@@ -64,9 +64,9 @@ class UvbotDebugUI:
                         self.enc[i] =self.enc[i] - 65534
                 self.enc[0] = -1 * self.enc[0]    
             elif data[0] == 193:
-                self.current[0] == (data[4] | (data[5]<<8))
+                self.current[0] = (data[4] | (data[5]<<8))
             elif data[0] == 200:
-                self.current[1] == (data[4] | (data[5]<<8))
+                self.current[1] = (data[4] | (data[5]<<8))
             
         elif id == 3001:
             self.pir[5] = (data[7]&128) >> 7
