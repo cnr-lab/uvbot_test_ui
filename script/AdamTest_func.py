@@ -49,8 +49,8 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
     def Receive_data(self):
         self.ultra_data1.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[0]), None))
         self.ultra_data2.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[1]), None))
-        self.ultra_data4.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[2]), None))
         self.ultra_data3.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[3]), None))
+        self.ultra_data4.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[2]), None))
         self.ultra_data5.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[4]), None))
         self.ultra_data6.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.ultrasound[5]), None))
         
