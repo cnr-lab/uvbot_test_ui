@@ -81,7 +81,7 @@ class UvbotDebugUI:
                 for i in range(2):
                     if not self.enc[i]&0b1000000 == 0:
                         self.enc[i] =self.enc[i] - 65534
-                self.enc[0] = -1 * self.enc[0]    
+                self.enc[1] = -1 * self.enc[1]    
             elif data[0] == 193:
                 self.current[0] = (data[4] | (data[5]<<8)) /10.0
             elif data[0] == 200:
