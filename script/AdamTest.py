@@ -591,7 +591,7 @@ class Ui_MainWindow_TestforAdam(object):
 "border-radius: 10px;\n"
 "")
         icon = QIcon()
-        icon.addFile(u"/home/kkk/Adam_test_ui/joystick/up.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../../pyqt_ui/joystick/up.png", QSize(), QIcon.Normal, QIcon.Off)
         self.up.setIcon(icon)
         self.up.setIconSize(QSize(101, 101))
         self.left = QToolButton(self.frame)
@@ -603,7 +603,7 @@ class Ui_MainWindow_TestforAdam(object):
 "	border-radius: 10px;\n"
 "")
         icon1 = QIcon()
-        icon1.addFile(u"/home/kkk/Adam_test_ui/joystick/left2.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"../../pyqt_ui/joystick/left2.png", QSize(), QIcon.Normal, QIcon.Off)
         self.left.setIcon(icon1)
         self.left.setIconSize(QSize(101, 101))
         self.down = QToolButton(self.frame)
@@ -615,7 +615,7 @@ class Ui_MainWindow_TestforAdam(object):
 "	border-radius: 10px;\n"
 "")
         icon2 = QIcon()
-        icon2.addFile(u"/home/kkk/Adam_test_ui/joystick/down2.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"../../pyqt_ui/joystick/down2.png", QSize(), QIcon.Normal, QIcon.Off)
         self.down.setIcon(icon2)
         self.down.setIconSize(QSize(101, 101))
         self.right = QToolButton(self.frame)
@@ -628,7 +628,7 @@ class Ui_MainWindow_TestforAdam(object):
 "	border-radius: 10px;\n"
 "")
         icon3 = QIcon()
-        icon3.addFile(u"/home/kkk/Adam_test_ui/joystick/right.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"../../pyqt_ui/joystick/right.png", QSize(), QIcon.Normal, QIcon.Off)
         self.right.setIcon(icon3)
         self.right.setIconSize(QSize(101, 101))
         self.suspend = QPushButton(self.frame)
@@ -662,6 +662,45 @@ class Ui_MainWindow_TestforAdam(object):
 "border-radius: 6px;\n"
 "\n"
 "")
+        self.Current = QLabel(self.frame)
+        self.Current.setObjectName(u"Current")
+        self.Current.setGeometry(QRect(390, 430, 81, 31))
+        self.Current.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.Current.setAlignment(Qt.AlignCenter)
+        self.Current_Left = QLabel(self.frame)
+        self.Current_Left.setObjectName(u"Current_Left")
+        self.Current_Left.setGeometry(QRect(480, 430, 31, 31))
+        self.Current_Left.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.Current_Left.setAlignment(Qt.AlignCenter)
+        self.Current_Left_data = QLabel(self.frame)
+        self.Current_Left_data.setObjectName(u"Current_Left_data")
+        self.Current_Left_data.setGeometry(QRect(530, 430, 71, 31))
+        self.Current_Left_data.setLayoutDirection(Qt.LeftToRight)
+        self.Current_Left_data.setStyleSheet(u"background:rgb(250, 250, 252)")
+        self.Current_Left_data.setAlignment(Qt.AlignCenter)
+        self.Current_Right = QLabel(self.frame)
+        self.Current_Right.setObjectName(u"Current_Right")
+        self.Current_Right.setGeometry(QRect(620, 430, 41, 31))
+        self.Current_Right.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.Current_Right.setAlignment(Qt.AlignCenter)
+        self.Current_Right_data = QLabel(self.frame)
+        self.Current_Right_data.setObjectName(u"Current_Right_data")
+        self.Current_Right_data.setGeometry(QRect(680, 430, 71, 31))
+        self.Current_Right_data.setLayoutDirection(Qt.LeftToRight)
+        self.Current_Right_data.setStyleSheet(u"background:rgb(250, 250, 252)")
+        self.Current_Right_data.setAlignment(Qt.AlignCenter)
         MainWindow_TestforAdam.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow_TestforAdam)
@@ -745,5 +784,10 @@ class Ui_MainWindow_TestforAdam(object):
         self.right.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"...", None))
         self.suspend.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"STOP", None))
         self.LED_X.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"X", None))
+        self.Current.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"\uc804\ub958", None))
+        self.Current_Left.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"L", None))
+        self.Current_Left_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">left_d</span></p></body></html>", None))
+        self.Current_Right.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"R", None))
+        self.Current_Right_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">right_d</span></p></body></html>", None))
     # retranslateUi
 

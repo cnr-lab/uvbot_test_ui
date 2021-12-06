@@ -1843,6 +1843,119 @@ border-radius: 6px;
       <string>X</string>
      </property>
     </widget>
+    <widget class="QLabel" name="Current">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>430</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {	
+	background-color: rgb(250, 250, 250);	
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>전류</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Current_Left">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>430</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {	
+	background-color: rgb(250, 250, 250);	
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>L</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Current_Left_data">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>430</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgb(250, 250, 252)</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2e3436;&quot;&gt;left_d&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Current_Right">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>430</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {	
+	background-color: rgb(250, 250, 250);	
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>R</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Current_Right_data">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>430</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgb(250, 250, 252)</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#2e3436;&quot;&gt;right_d&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
