@@ -80,6 +80,8 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
         self.Encoder_Left_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.enc[1]), None))
         self.Encoder_Right_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.enc[0]), None))
 
+        self.Current_Left_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.current[1]), None))
+        self.Current_Right_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.current[0]), None))
 
     #UV BUTTON
     def Uv_ON(self):
