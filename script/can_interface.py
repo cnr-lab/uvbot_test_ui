@@ -95,9 +95,9 @@ class UvbotDebugUI:
             packit = [PID_PNT_VEL_CMD,1,20,0,1,20,0,1]
         elif direction == "back":
             packit = [PID_PNT_VEL_CMD,1,236,255,1,236,255,1]
-        elif direction == "right":
-            packit = [PID_PNT_VEL_CMD,1,20,0,1,236,255,1]
         elif direction == "left":
+            packit = [PID_PNT_VEL_CMD,1,20,0,1,236,255,1]
+        elif direction == "right":
             packit = [PID_PNT_VEL_CMD,1,236,255,1,20,0,1]
         else:
             packit = [PID_PNT_VEL_CMD,1,0,0,1,0,0,1]
@@ -109,7 +109,7 @@ class UvbotDebugUI:
             self.rgb = 6
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         elif rgb == "blue":
-            self.rgb = 10
+            self.rgb = 1
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         elif rgb == "green":
             self.rgb = 2
