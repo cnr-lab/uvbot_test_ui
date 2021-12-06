@@ -103,7 +103,7 @@ class UvbotDebugUI:
             self.rgb = 6
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         elif rgb == "blue":
-            self.rgb = 1 #10
+            self.rgb = 10
             packit = [0,0,0,40,0,packit5,0,self.rgb]
         elif rgb == "green":
             self.rgb = 2
