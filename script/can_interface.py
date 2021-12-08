@@ -24,7 +24,7 @@ class UvbotDebugUI:
         self.touch = 0
         self.battery = 0
         self.charge = "알수없음"
-        self.imu = [0,0,0,0] # Roll Pitch Yaw angularFpZ
+        self.imu = [0,0,0,0] # Roll Pitch Yaw angularZ
         self.enc = [0,0] # Right Left
         self.current = [0,0]
         self.significant_figures = 100
@@ -54,6 +54,19 @@ class UvbotDebugUI:
             self.imu[1] = (data[2]|data[3]<<8)/self.significant_figures
             self.imu[2] = (data[4]|data[5]<<8)/self.significant_figures
             self.imu[3] = (data[6]|data[7]<<8)/self.significant_figures
+        
+        elif id == 12105473:
+            if data[0]  == 216:
+                self.enc[0] = (data[5] | (data[6]<<8))
+                self.enc[1] = (data[2] | (data[3]<<8))
+                for i in range(2):
+                    if not self.enc[i]&0b1000000 == 0:
+                        self.enc[i] =self.enc[i] - 65534
+                self.enc[0] = -1 * self.enc[0]    
+            elif data[0] == 193:
+                self.current[0] == (data[4] | (data[5]<<8))
+            elif data[0] == 200:
+                self.current[1] == (data[4] | (data[5]<<8))
             
         elif id == 3001:
             self.pir[5] = (data[7]&128) >> 7
@@ -73,19 +86,6 @@ class UvbotDebugUI:
                 self.charge = "충전중"
             elif charge_can_msg== 32:
                 self.charge = "충전기분리"
-                
-        elif id == 12105473:
-            if data[0]  == 216:
-                self.enc[0] = (data[5] | (data[6]<<8))
-                self.enc[1] = (data[2] | (data[3]<<8))
-                for i in range(2):
-                    if not self.enc[i]&0b1000000 == 0:
-                        self.enc[i] =self.enc[i] - 65534
-                self.enc[1] = -1 * self.enc[1]    
-            elif data[0] == 193:
-                self.current[0] = (data[4] | (data[5]<<8)) /10.0
-            elif data[0] == 200:
-                self.current[1] = (data[4] | (data[5]<<8)) /10.0
                 
     def sendJoy(self,direction="stop"):
         PID_PNT_VEL_CMD = 207

@@ -7,10 +7,10 @@ python3</br>
     - 터미널을 연 모습</br>![img](image/termial1.png)
 2. 다음과 명령어를 순서대로 입력한다.
 
-    & sudo apt-get install can-utils</br>
-    & pip3 install cantools</br>
-    & pip3 install Pyside2</br>
-    & git clone https://github.com/cnr-lab/uvbot_test_ui.git</br>
+    $ sudo apt-get install can-utils</br>
+    $ pip3 install cantools</br>
+    $ pip3 install Pyside2</br>
+    $ git clone https://github.com/cnr-lab/uvbot_test_ui.git</br>
 
 이미 설치된 경우 설치하지 않아도 됩니다.</br>
 
@@ -21,7 +21,7 @@ python3</br>
 2. 위 사진의 can 통신 모듈을 컴퓨터에 꼽는다.
 3. can 모듈과 로봇을 연결한다.
 4. 터미널을 열어 다음과 같이 실행한다.</br>
-    $ cd Adam_test_ui/shell</br>
+    $ cd uvbot_test_ui/shell</br>
     $ sudo ./adam_ui.sh</br>
     ![img](image/termial2.png)</br>
     만약 위와 같은 문장이 나오면 우분투 비밀번호 를 입력하시면됩니다.</br>
