@@ -17,14 +17,23 @@ class Ui_MainWindow_TestforAdam(object):
     def setupUi(self, MainWindow_TestforAdam):
         if not MainWindow_TestforAdam.objectName():
             MainWindow_TestforAdam.setObjectName(u"MainWindow_TestforAdam")
-        MainWindow_TestforAdam.resize(792, 711)
-        MainWindow_TestforAdam.setMinimumSize(QSize(792, 711))
-        MainWindow_TestforAdam.setMaximumSize(QSize(792, 711))
+        MainWindow_TestforAdam.setEnabled(True)
+        MainWindow_TestforAdam.resize(792, 851)
+        MainWindow_TestforAdam.setMinimumSize(QSize(792, 851))
+        MainWindow_TestforAdam.setMaximumSize(QSize(792, 871))
         self.centralwidget = QWidget(MainWindow_TestforAdam)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setMinimumSize(QSize(792, 851))
+        self.centralwidget.setMaximumSize(QSize(792, 851))
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(0, 0, 811, 711))
+        self.frame.setEnabled(True)
+        self.frame.setGeometry(QRect(0, 0, 811, 851))
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
+        self.frame.setSizePolicy(sizePolicy)
         self.frame.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(220,220,220);	\n"
 "	color: rgb(220, 220, 220);\n"
@@ -701,6 +710,96 @@ class Ui_MainWindow_TestforAdam(object):
         self.Current_Right_data.setLayoutDirection(Qt.LeftToRight)
         self.Current_Right_data.setStyleSheet(u"background:rgb(250, 250, 252)")
         self.Current_Right_data.setAlignment(Qt.AlignCenter)
+        self.JETSON = QLabel(self.frame)
+        self.JETSON.setObjectName(u"JETSON")
+        self.JETSON.setGeometry(QRect(10, 720, 61, 31))
+        self.JETSON.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.JETSON.setAlignment(Qt.AlignCenter)
+        self.JETSON_ON = QPushButton(self.frame)
+        self.JETSON_ON.setObjectName(u"JETSON_ON")
+        self.JETSON_ON.setGeometry(QRect(80, 720, 51, 31))
+        self.JETSON_ON.setFont(font)
+        self.JETSON_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"border-radius: 6px;\n"
+"")
+        self.JETSON_OFF = QPushButton(self.frame)
+        self.JETSON_OFF.setObjectName(u"JETSON_OFF")
+        self.JETSON_OFF.setGeometry(QRect(140, 720, 51, 31))
+        self.JETSON_OFF.setFont(font)
+        self.JETSON_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"border-radius: 6px;\n"
+"")
+        self.CAMERA = QLabel(self.frame)
+        self.CAMERA.setObjectName(u"CAMERA")
+        self.CAMERA.setGeometry(QRect(10, 800, 61, 31))
+        self.CAMERA.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.CAMERA.setAlignment(Qt.AlignCenter)
+        self.LiDAR_ON = QPushButton(self.frame)
+        self.LiDAR_ON.setObjectName(u"LiDAR_ON")
+        self.LiDAR_ON.setGeometry(QRect(80, 760, 51, 31))
+        self.LiDAR_ON.setFont(font)
+        self.LiDAR_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"border-radius: 6px;\n"
+"")
+        self.LiDAR_OFF = QPushButton(self.frame)
+        self.LiDAR_OFF.setObjectName(u"LiDAR_OFF")
+        self.LiDAR_OFF.setGeometry(QRect(140, 760, 51, 31))
+        self.LiDAR_OFF.setFont(font)
+        self.LiDAR_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"border-radius: 6px;\n"
+"")
+        self.LiDAR = QLabel(self.frame)
+        self.LiDAR.setObjectName(u"LiDAR")
+        self.LiDAR.setGeometry(QRect(10, 760, 61, 31))
+        self.LiDAR.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.LiDAR.setAlignment(Qt.AlignCenter)
+        self.CAMERA_ON = QPushButton(self.frame)
+        self.CAMERA_ON.setObjectName(u"CAMERA_ON")
+        self.CAMERA_ON.setGeometry(QRect(80, 800, 51, 31))
+        self.CAMERA_ON.setFont(font)
+        self.CAMERA_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"border-radius: 6px;\n"
+"")
+        self.CAMERA_OFF = QPushButton(self.frame)
+        self.CAMERA_OFF.setObjectName(u"CAMERA_OFF")
+        self.CAMERA_OFF.setGeometry(QRect(140, 800, 51, 31))
+        self.CAMERA_OFF.setFont(font)
+        self.CAMERA_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"color: rgb(0, 0, 0);\n"
+"\n"
+"border-radius: 6px;\n"
+"")
+        self.IR = QLabel(self.frame)
+        self.IR.setObjectName(u"IR")
+        self.IR.setGeometry(QRect(260, 720, 61, 31))
+        self.IR.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.IR.setAlignment(Qt.AlignCenter)
         MainWindow_TestforAdam.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow_TestforAdam)
@@ -789,5 +888,15 @@ class Ui_MainWindow_TestforAdam(object):
         self.Current_Left_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">left_d</span></p></body></html>", None))
         self.Current_Right.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"R", None))
         self.Current_Right_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">right_d</span></p></body></html>", None))
+        self.JETSON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"JETSON", None))
+        self.JETSON_ON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"ON", None))
+        self.JETSON_OFF.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"OFF", None))
+        self.CAMERA.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"CAMERA", None))
+        self.LiDAR_ON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"ON", None))
+        self.LiDAR_OFF.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"OFF", None))
+        self.LiDAR.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"LiDAR", None))
+        self.CAMERA_ON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"ON", None))
+        self.CAMERA_OFF.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"OFF", None))
+        self.IR.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"IR", None))
     # retranslateUi
 
