@@ -34,6 +34,11 @@ class UvbotDebugUI:
         self.rgb = 0
         
         self.count = 0
+
+        self.jetson_state  = "OFF"  # ON, OFF
+        self.camera_state  = "OFF"  # ON, OFF
+        self.lidar_state  = "OFF"  # ON, OFF
+        self.ir_state  = "알수없음"  # 0 : Robot_Standby, 1 : Finish_docking
     
     def parse(self): 
         if self.count >= 1000:
@@ -131,16 +136,6 @@ class UvbotDebugUI:
         packit = [0,0,0,40,0,packit5,0,self.rgb]
         self.can_interface.sendCan(1002,packit)
     
-    def sendJetson(self,state):
-        pass
-    
-    def sendLidar(self,state):
-        pass
-
-    def sendCamera(self,state):
-        pass
-
-
     def sendTTS(self):
         packit5 = (0|(self.air<<7)|(self.uv<<6))
         packit = [0,0,0,40,0,packit5,1,self.rgb]

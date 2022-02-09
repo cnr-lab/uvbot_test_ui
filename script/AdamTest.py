@@ -97,7 +97,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.ultra6.setAlignment(Qt.AlignCenter)
         self.UV_ON = QPushButton(self.frame)
         self.UV_ON.setObjectName(u"UV_ON")
-        self.UV_ON.setGeometry(QRect(80, 490, 51, 31))
+        self.UV_ON.setGeometry(QRect(80, 650, 51, 31))
         font = QFont()
         font.setFamily(u"Ubuntu")
         font.setPointSize(13)
@@ -456,7 +456,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.Encoder_Right_data.setAlignment(Qt.AlignCenter)
         self.UV = QLabel(self.frame)
         self.UV.setObjectName(u"UV")
-        self.UV.setGeometry(QRect(20, 490, 51, 31))
+        self.UV.setGeometry(QRect(20, 650, 51, 31))
         self.UV.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
@@ -465,7 +465,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.UV.setAlignment(Qt.AlignCenter)
         self.UV_OFF = QPushButton(self.frame)
         self.UV_OFF.setObjectName(u"UV_OFF")
-        self.UV_OFF.setGeometry(QRect(140, 490, 51, 31))
+        self.UV_OFF.setGeometry(QRect(140, 650, 51, 31))
         self.UV_OFF.setFont(font)
         self.UV_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "color: rgb(0, 0, 0);\n"
@@ -474,7 +474,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.AIR = QLabel(self.frame)
         self.AIR.setObjectName(u"AIR")
-        self.AIR.setGeometry(QRect(20, 550, 51, 31))
+        self.AIR.setGeometry(QRect(20, 690, 51, 31))
         self.AIR.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
@@ -483,7 +483,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.AIR.setAlignment(Qt.AlignCenter)
         self.AIR_ON = QPushButton(self.frame)
         self.AIR_ON.setObjectName(u"AIR_ON")
-        self.AIR_ON.setGeometry(QRect(80, 550, 51, 31))
+        self.AIR_ON.setGeometry(QRect(80, 690, 51, 31))
         self.AIR_ON.setFont(font)
         self.AIR_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
 "color: rgb(0, 0, 0);\n"
@@ -492,7 +492,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.Speaker_send = QPushButton(self.frame)
         self.Speaker_send.setObjectName(u"Speaker_send")
-        self.Speaker_send.setGeometry(QRect(80, 670, 61, 31))
+        self.Speaker_send.setGeometry(QRect(500, 650, 61, 31))
         self.Speaker_send.setFont(font)
         self.Speaker_send.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(136, 138, 133, 255), stop:1 rgba(255, 255, 255, 255));	\n"
 "color: rgb(0, 0, 0);\n"
@@ -502,7 +502,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.AIR_OFF = QPushButton(self.frame)
         self.AIR_OFF.setObjectName(u"AIR_OFF")
-        self.AIR_OFF.setGeometry(QRect(140, 550, 51, 31))
+        self.AIR_OFF.setGeometry(QRect(140, 690, 51, 31))
         self.AIR_OFF.setFont(font)
         self.AIR_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "color: rgb(0, 0, 0);\n"
@@ -511,7 +511,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.Speaker = QLabel(self.frame)
         self.Speaker.setObjectName(u"Speaker")
-        self.Speaker.setGeometry(QRect(20, 670, 51, 31))
+        self.Speaker.setGeometry(QRect(430, 650, 51, 31))
         self.Speaker.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
@@ -520,7 +520,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.Speaker.setAlignment(Qt.AlignCenter)
         self.LED = QLabel(self.frame)
         self.LED.setObjectName(u"LED")
-        self.LED.setGeometry(QRect(20, 610, 51, 31))
+        self.LED.setGeometry(QRect(20, 730, 51, 31))
         self.LED.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
@@ -529,7 +529,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.LED.setAlignment(Qt.AlignCenter)
         self.LED_B = QPushButton(self.frame)
         self.LED_B.setObjectName(u"LED_B")
-        self.LED_B.setGeometry(QRect(200, 610, 51, 31))
+        self.LED_B.setGeometry(QRect(200, 730, 51, 31))
         self.LED_B.setFont(font)
         self.LED_B.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
 "color: rgb(0, 0, 0);\n"
@@ -538,7 +538,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.LED_R = QPushButton(self.frame)
         self.LED_R.setObjectName(u"LED_R")
-        self.LED_R.setGeometry(QRect(80, 610, 51, 31))
+        self.LED_R.setGeometry(QRect(80, 730, 51, 31))
         self.LED_R.setFont(font)
         self.LED_R.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "color: rgb(0, 0, 0);\n"
@@ -547,7 +547,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.LED_G = QPushButton(self.frame)
         self.LED_G.setObjectName(u"LED_G")
-        self.LED_G.setGeometry(QRect(140, 610, 51, 31))
+        self.LED_G.setGeometry(QRect(140, 730, 51, 31))
         self.LED_G.setFont(font)
         self.LED_G.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(0, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "color: rgb(0, 0, 0);\n"
@@ -556,7 +556,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.motor = QLabel(self.frame)
         self.motor.setObjectName(u"motor")
-        self.motor.setGeometry(QRect(270, 490, 141, 31))
+        self.motor.setGeometry(QRect(340, 690, 141, 31))
         self.motor.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
@@ -565,7 +565,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.motor.setAlignment(Qt.AlignCenter)
         self.motor_send = QPushButton(self.frame)
         self.motor_send.setObjectName(u"motor_send")
-        self.motor_send.setGeometry(QRect(430, 490, 61, 31))
+        self.motor_send.setGeometry(QRect(500, 690, 61, 31))
         self.motor_send.setFont(font)
         self.motor_send.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(136, 138, 133, 255), stop:1 rgba(255, 255, 255, 255));	\n"
 "color: rgb(0, 0, 0);\n"
@@ -575,7 +575,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.Unlock = QLabel(self.frame)
         self.Unlock.setObjectName(u"Unlock")
-        self.Unlock.setGeometry(QRect(270, 550, 141, 31))
+        self.Unlock.setGeometry(QRect(340, 730, 141, 31))
         self.Unlock.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
@@ -584,7 +584,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.Unlock.setAlignment(Qt.AlignCenter)
         self.Unlock_send = QPushButton(self.frame)
         self.Unlock_send.setObjectName(u"Unlock_send")
-        self.Unlock_send.setGeometry(QRect(430, 550, 61, 31))
+        self.Unlock_send.setGeometry(QRect(500, 730, 61, 31))
         self.Unlock_send.setFont(font)
         self.Unlock_send.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(136, 138, 133, 255), stop:1 rgba(255, 255, 255, 255));	\n"
 "color: rgb(0, 0, 0);\n"
@@ -594,7 +594,7 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.up = QToolButton(self.frame)
         self.up.setObjectName(u"up")
-        self.up.setGeometry(QRect(640, 500, 51, 51))
+        self.up.setGeometry(QRect(670, 630, 51, 51))
         self.up.setStyleSheet(u"background-color: rgb(157, 227, 230);	\n"
 "color: rgb(220, 220, 220);\n"
 "border-radius: 10px;\n"
@@ -605,7 +605,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.up.setIconSize(QSize(101, 101))
         self.left = QToolButton(self.frame)
         self.left.setObjectName(u"left")
-        self.left.setGeometry(QRect(590, 550, 51, 51))
+        self.left.setGeometry(QRect(620, 680, 51, 51))
         self.left.setStyleSheet(u"	\n"
 "	background-color: rgb(157, 227, 230);	\n"
 "	color: rgb(220, 220, 220);\n"
@@ -617,7 +617,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.left.setIconSize(QSize(101, 101))
         self.down = QToolButton(self.frame)
         self.down.setObjectName(u"down")
-        self.down.setGeometry(QRect(640, 600, 51, 51))
+        self.down.setGeometry(QRect(670, 730, 51, 51))
         self.down.setStyleSheet(u"	\n"
 "	background-color: rgb(157, 227, 230);	\n"
 "	color: rgb(220, 220, 220);\n"
@@ -629,7 +629,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.down.setIconSize(QSize(101, 101))
         self.right = QToolButton(self.frame)
         self.right.setObjectName(u"right")
-        self.right.setGeometry(QRect(690, 550, 51, 51))
+        self.right.setGeometry(QRect(720, 680, 51, 51))
         self.right.setFocusPolicy(Qt.TabFocus)
         self.right.setStyleSheet(u"	\n"
 "	background-color: rgb(157, 227, 230);	\n"
@@ -642,7 +642,7 @@ class Ui_MainWindow_TestforAdam(object):
         self.right.setIconSize(QSize(101, 101))
         self.suspend = QPushButton(self.frame)
         self.suspend.setObjectName(u"suspend")
-        self.suspend.setGeometry(QRect(650, 560, 31, 31))
+        self.suspend.setGeometry(QRect(680, 690, 31, 31))
         font1 = QFont()
         font1.setFamily(u"URW Chancery L")
         font1.setPointSize(10)
@@ -656,14 +656,14 @@ class Ui_MainWindow_TestforAdam(object):
 "")
         self.line = QFrame(self.frame)
         self.line.setObjectName(u"line")
-        self.line.setGeometry(QRect(0, 470, 791, 2))
+        self.line.setGeometry(QRect(0, 580, 791, 2))
         self.line.setMinimumSize(QSize(0, 0))
         self.line.setStyleSheet(u"background:rgb(239, 41, 41)")
         self.line.setFrameShape(QFrame.HLine)
         self.line.setFrameShadow(QFrame.Sunken)
         self.LED_X = QPushButton(self.frame)
         self.LED_X.setObjectName(u"LED_X")
-        self.LED_X.setGeometry(QRect(260, 610, 51, 31))
+        self.LED_X.setGeometry(QRect(260, 730, 51, 31))
         self.LED_X.setFont(font)
         self.LED_X.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(136, 138, 133, 255), stop:1 rgba(255, 255, 255, 255));	\n"
 "color: rgb(0, 0, 0);\n"
@@ -712,94 +712,67 @@ class Ui_MainWindow_TestforAdam(object):
         self.Current_Right_data.setAlignment(Qt.AlignCenter)
         self.JETSON = QLabel(self.frame)
         self.JETSON.setObjectName(u"JETSON")
-        self.JETSON.setGeometry(QRect(10, 720, 61, 31))
+        self.JETSON.setGeometry(QRect(20, 490, 61, 31))
         self.JETSON.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
 "	border-radius: 10px;\n"
 "}")
         self.JETSON.setAlignment(Qt.AlignCenter)
-        self.JETSON_ON = QPushButton(self.frame)
-        self.JETSON_ON.setObjectName(u"JETSON_ON")
-        self.JETSON_ON.setGeometry(QRect(80, 720, 51, 31))
-        self.JETSON_ON.setFont(font)
-        self.JETSON_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"border-radius: 6px;\n"
-"")
-        self.JETSON_OFF = QPushButton(self.frame)
-        self.JETSON_OFF.setObjectName(u"JETSON_OFF")
-        self.JETSON_OFF.setGeometry(QRect(140, 720, 51, 31))
-        self.JETSON_OFF.setFont(font)
-        self.JETSON_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"border-radius: 6px;\n"
-"")
         self.CAMERA = QLabel(self.frame)
         self.CAMERA.setObjectName(u"CAMERA")
-        self.CAMERA.setGeometry(QRect(10, 800, 61, 31))
+        self.CAMERA.setGeometry(QRect(190, 490, 61, 31))
         self.CAMERA.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
 "	border-radius: 10px;\n"
 "}")
         self.CAMERA.setAlignment(Qt.AlignCenter)
-        self.LiDAR_ON = QPushButton(self.frame)
-        self.LiDAR_ON.setObjectName(u"LiDAR_ON")
-        self.LiDAR_ON.setGeometry(QRect(80, 760, 51, 31))
-        self.LiDAR_ON.setFont(font)
-        self.LiDAR_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"border-radius: 6px;\n"
-"")
-        self.LiDAR_OFF = QPushButton(self.frame)
-        self.LiDAR_OFF.setObjectName(u"LiDAR_OFF")
-        self.LiDAR_OFF.setGeometry(QRect(140, 760, 51, 31))
-        self.LiDAR_OFF.setFont(font)
-        self.LiDAR_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"border-radius: 6px;\n"
-"")
         self.LiDAR = QLabel(self.frame)
         self.LiDAR.setObjectName(u"LiDAR")
-        self.LiDAR.setGeometry(QRect(10, 760, 61, 31))
+        self.LiDAR.setGeometry(QRect(360, 490, 61, 31))
         self.LiDAR.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
 "	border-radius: 10px;\n"
 "}")
         self.LiDAR.setAlignment(Qt.AlignCenter)
-        self.CAMERA_ON = QPushButton(self.frame)
-        self.CAMERA_ON.setObjectName(u"CAMERA_ON")
-        self.CAMERA_ON.setGeometry(QRect(80, 800, 51, 31))
-        self.CAMERA_ON.setFont(font)
-        self.CAMERA_ON.setStyleSheet(u"background-color:qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(52, 175, 219, 255), stop:1 rgba(67, 211, 211, 255));	\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"border-radius: 6px;\n"
-"")
-        self.CAMERA_OFF = QPushButton(self.frame)
-        self.CAMERA_OFF.setObjectName(u"CAMERA_OFF")
-        self.CAMERA_OFF.setGeometry(QRect(140, 800, 51, 31))
-        self.CAMERA_OFF.setFont(font)
-        self.CAMERA_OFF.setStyleSheet(u"background-color:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:1, stop:0 rgba(239, 41, 41, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"color: rgb(0, 0, 0);\n"
-"\n"
-"border-radius: 6px;\n"
-"")
         self.IR = QLabel(self.frame)
         self.IR.setObjectName(u"IR")
-        self.IR.setGeometry(QRect(260, 720, 61, 31))
+        self.IR.setGeometry(QRect(530, 490, 61, 31))
         self.IR.setStyleSheet(u"QFrame {	\n"
 "	background-color: rgb(250, 250, 250);	\n"
 "	color: rgb(0, 0, 0);\n"
 "	border-radius: 10px;\n"
 "}")
         self.IR.setAlignment(Qt.AlignCenter)
+        self.JETSON_state = QLabel(self.frame)
+        self.JETSON_state.setObjectName(u"JETSON_state")
+        self.JETSON_state.setGeometry(QRect(90, 490, 71, 31))
+        self.JETSON_state.setLayoutDirection(Qt.LeftToRight)
+        self.JETSON_state.setStyleSheet(u"background:rgb(250, 250, 252)")
+        self.JETSON_state.setAlignment(Qt.AlignCenter)
+        self.CAMERA_state = QLabel(self.frame)
+        self.CAMERA_state.setObjectName(u"CAMERA_state")
+        self.CAMERA_state.setGeometry(QRect(260, 490, 71, 31))
+        self.CAMERA_state.setLayoutDirection(Qt.LeftToRight)
+        self.CAMERA_state.setStyleSheet(u"background:rgb(250, 250, 252)")
+        self.CAMERA_state.setAlignment(Qt.AlignCenter)
+        self.LiDAR_state = QLabel(self.frame)
+        self.LiDAR_state.setObjectName(u"LiDAR_state")
+        self.LiDAR_state.setGeometry(QRect(430, 490, 71, 31))
+        self.LiDAR_state.setLayoutDirection(Qt.LeftToRight)
+        self.LiDAR_state.setStyleSheet(u"background:rgb(250, 250, 252)")
+        self.LiDAR_state.setAlignment(Qt.AlignCenter)
+        self.IR_state = QLabel(self.frame)
+        self.IR_state.setObjectName(u"IR_state")
+        self.IR_state.setGeometry(QRect(600, 490, 151, 31))
+        self.IR_state.setStyleSheet(u"QFrame {	\n"
+"	background-color: rgb(250, 250, 250);	\n"
+"	color: rgb(0, 0, 0);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.IR_state.setAlignment(Qt.AlignCenter)
         MainWindow_TestforAdam.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow_TestforAdam)
@@ -889,14 +862,12 @@ class Ui_MainWindow_TestforAdam(object):
         self.Current_Right.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"R", None))
         self.Current_Right_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">right_d</span></p></body></html>", None))
         self.JETSON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"JETSON", None))
-        self.JETSON_ON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"ON", None))
-        self.JETSON_OFF.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"OFF", None))
         self.CAMERA.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"CAMERA", None))
-        self.LiDAR_ON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"ON", None))
-        self.LiDAR_OFF.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"OFF", None))
         self.LiDAR.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"LiDAR", None))
-        self.CAMERA_ON.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"ON", None))
-        self.CAMERA_OFF.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"OFF", None))
         self.IR.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"IR", None))
+        self.JETSON_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">state</span></p></body></html>", None))
+        self.CAMERA_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">state</span></p></body></html>", None))
+        self.LiDAR_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">state</span></p></body></html>", None))
+        self.IR_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"state", None))
     # retranslateUi
 
