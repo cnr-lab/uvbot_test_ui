@@ -121,20 +121,20 @@ class UvbotDebugUI:
             return False
                 
     def sendJoy(self,direction="stop"):
-        PID_PNT_VEL_CMD = 207
+        ID = 1001
         if direction == "stop":
-            packit = [PID_PNT_VEL_CMD,1,0,0,1,0,0,1]
+            packit = [0,0,0,0,1,0,0,1]
         elif direction == "front":
-            packit = [PID_PNT_VEL_CMD,1,20,0,1,20,0,1]
+            packit = [100,0,0,0,1,0,0,0]
         elif direction == "back":
-            packit = [PID_PNT_VEL_CMD,1,236,255,1,236,255,1]
+            packit = [255,156,0,0,1,0,0,0]
         elif direction == "left":
-            packit = [PID_PNT_VEL_CMD,1,20,0,1,236,255,1]
+            packit = [0,0,50,0,1,0,0,0]
         elif direction == "right":
-            packit = [PID_PNT_VEL_CMD,1,236,255,1,20,0,1]
+            packit = [0,0,50,0,1,0,0,0]
         else:
-            packit = [PID_PNT_VEL_CMD,1,0,0,1,0,0,1]
-        self.can_interface.sendCan(12040193,packit)
+            packit = [0,0,206,255,1,0,0,1]
+        self.can_interface.sendCan(ID,packit)
         
     def sendLED(self,rgb="off"):
         packit5 = (0|(self.air<<7)|(self.uv<<6))
