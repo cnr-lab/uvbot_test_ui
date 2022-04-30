@@ -129,7 +129,7 @@ class UvbotDebugUI:
         elif direction == "back":
             packit = [255,156,0,0,1,0,0,0]
         elif direction == "left":
-            packit = [0,0,50,0,1,0,0,0]
+            packit = [0,0,206,255,1,0,0,0]
         elif direction == "right":
             packit = [0,0,50,0,1,0,0,0]
         else:
