@@ -15,8 +15,9 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
         self.timer.timeout.connect(self.can)
         
     def can(self):
-        self.func.parse()
-        self.Receive_data()
+        if self.func.parse():
+            self.Receive_data()
+            self.func.sendRockJetson()
 
     def setupUi(self, MainWindow):
         super().setupUi(MainWindow)
@@ -26,16 +27,6 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
         #Air
         self.AIR_ON.clicked.connect(self.Air_ON)
         self.AIR_OFF.clicked.connect(self.Air_OFF)
-
-        # Jetson
-        self.JETSON_ON.clicked.connect(self.Jetson_ON)
-        self.JETSON_OFF.clicked.connect(self.Jetson_OFF)
-        #Lidar
-        self.LiDAR_ON.clicked.connect(self.Lidar_ON)
-        self.LiDAR_OFF.clicked.connect(self.Lidar_OFF)
-        #camera
-        self.CAMERA_ON.clicked.connect(self.Camera_ON)
-        self.CAMERA_OFF.clicked.connect(self.Camera_OFF)
 
         #LED RGB
         self.LED_B.clicked.connect(self.Led_B)
@@ -94,6 +85,11 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
         self.Current_Left_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.current[1]), None))
         self.Current_Right_data.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.current[0]), None))
 
+        self.JETSON_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.jetson_state), None))
+        self.CAMERA_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.camera_state), None))
+        self.LiDAR_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"<html><head/><body><p><span style=\" color:#2e3436;\">{}</span></p></body></html>".format(self.func.lidar_state), None))
+        self.IR_state.setText(QCoreApplication.translate("MainWindow_TestforAdam", u"{}".format(self.func.ir_state), None))
+
     #UV BUTTON
     def Uv_ON(self):
         self.func.sendUV(1)
@@ -110,30 +106,6 @@ class TestAtestWindow(Ui_MainWindow_TestforAdam):
     def Air_OFF(self):
         self.func.sendAir(0)
         print("AIR_OFF")
-    
-    #JETSON BUTTON
-    def Jetson_ON(self):
-        self.func.sendJetson(1)
-        print("JETSON_ON")
-    def Jetson_OFF(self):
-        self.func.sendJetson(0)
-        print("JETSON_OFF")
-
-    #LIDAR BUTTON
-    def Lidar_ON(self):
-        self.func.sendLidar(1)
-        print("JETSON_ON")
-    def Lidar_OFF(self):
-        self.func.sendLidar(0)
-        print("JETSON_OFF")
-    
-    #CAMERA BUTTON
-    def Camera_ON(self):
-        self.func.sendCamera(1)
-        print("JETSON_ON")
-    def Camera_OFF(self):
-        self.func.sendCamera(0)
-        print("JETSON_OFF")
 
     #LED BUTTON
     def Led_B(self):
