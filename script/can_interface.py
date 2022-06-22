@@ -125,15 +125,15 @@ class UvbotDebugUI:
         if direction == "stop":
             packit = [0,0,0,0,1,0,0,1]
         elif direction == "front":
-            packit = [100,0,0,0,1,0,0,0]
+            packit = [10,0,0,0,1,0,0,0]
         elif direction == "back":
-            packit = [255,156,0,0,1,0,0,0]
-        elif direction == "left":
-            packit = [0,0,206,255,1,0,0,0]
+            packit = [246,255,0,0,1,0,0,0]
         elif direction == "right":
-            packit = [0,0,50,0,1,0,0,0]
+            packit = [0,0,226,255,1,0,0,0]
+        elif direction == "left":
+            packit = [0,0,30,0,1,0,0,0]
         else:
-            packit = [0,0,206,255,1,0,0,1]
+            packit = [0,0,0,0,1,0,0,1]
         self.can_interface.sendCan(ID,packit)
         
     def sendLED(self,rgb="off"):
